@@ -1,0 +1,31 @@
+<%= form_for((@visit), class: "contact-form") do |f| %>
+  <!-- <% if @visit.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@visit.errors.count, "error") %> prohibited this visit from being saved:</h2>
+
+      <ul>
+      <% @visit.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %> -->
+
+
+  <div class="row">
+    <h2 class="newvisith2">What are you here for today?</h2>
+    <br/>
+    <%= select_tag "course", options_from_collection_for_select(@courses, "id", "name") %>
+    <br/>
+  </div>
+  <div class="visitbutton-row">
+      <div class="col span-1-of-3">
+          <label>&nbsp;</label>
+      </div>
+      <br/>
+
+      <div class="col span-1-of-3">
+   <%= f.submit "Check In", class: "btn btn-1" %>
+      </div>
+  </div>
+<% end %>

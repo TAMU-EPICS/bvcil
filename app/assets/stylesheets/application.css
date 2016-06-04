@@ -1,0 +1,349 @@
+
+
+ /* ------------------------------------------------------------*/
+ /* BASIC SETUP */
+ /* ------------------------------------------------------------*/
+
+ *{
+   margin:0;
+   padding:0;
+   box-sizing:border-box;
+ }
+
+ html, body{
+   background-color: #fff;
+   color:#555;
+   font-family: 'Lato','Arial', sans-serif;
+   font-weight: 400;
+   font-size: 20px;
+   text-rendering: optimizeLegibility;
+   overflow-x:hidden;
+ }
+
+ /* ------------------------------------------------------------*/
+ /* REUSABLE COMPONENTS */
+ /* ------------------------------------------------------------*/
+.col{
+  margin-right: 80px;
+}
+ .row{
+   max-width: 1400px;
+   margin: 0 auto;
+ }
+
+ /*------------------BUTTONS-------------*/
+ .btn:link,
+ .btn:visited,
+ input[type=submit] {
+     display: inline-block;
+     padding: 10px 30px;
+     font-weight: 400;
+     text-decoration: none;
+     border-radius: 200px;
+     -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+     transition: background-color 0.2s, border 0.2s, color 0.2s;
+ }
+
+ .btn-full:link,
+ .btn-full:visited,
+ input[type=submit] {
+
+     background-color: #18b093;
+    border: 1px solid #18b093;
+    color: white;
+     margin-right: 15px;
+ }
+
+ .btn-ghost:link,
+ .btn-ghost:visited {
+     border: 1px solid #18b093;
+     color: #fff;
+ }
+
+ .btn:hover,
+ .btn:active,
+ input[type=submit]:hover,
+ input[type=submit]:active {
+     background-color: ##14927a;
+ }
+
+ .btn-full:hover,
+ .btn-full:active {
+     border: 1px solid #14927a;
+ }
+
+ .btn-ghost:hover,
+ .btn-ghost:active {
+     border: 1px solid #14927a;
+     color: #fff;
+ }
+
+
+ /*-------------------HEADINGS--------------------*/
+ h1, h2, h3{
+
+   font-weight: 300;
+ }
+
+
+ h2{
+   font-size: 180%;
+   word-spacing: 2px;
+   text-align: center;
+   margin-bottom: 30px;
+   letter-spacing: 1px;
+ }
+
+
+ h2:after{
+   display:block;
+   height: 2px;
+   background-color: #18b093;
+   content: " ";
+   width: 100px;
+   margin:0 auto;
+   margin-top: 30px;
+ }
+
+ h3{
+   font-size: 110%;
+   margin-bottom: 15px;
+     color: #000000;
+     text-align: center;
+     margin-bottom: 30px;
+     letter-spacing: 1px;
+ }
+
+ .signout{
+   margin-left: 30%;
+ }
+ /*-------------------PARAGRAPHS--------------------*/
+ .long-copy{
+   line-height: 175%;
+   width: 70%;
+   margin-left: 12%;
+   font-size: 250%;
+ }
+ section {
+   padding: 0px 0;
+ }
+
+ .box{
+   padding: 1%;
+ }
+
+ .box p{
+   font-size: 90%;
+   line-height: 145%;
+ }
+
+ /*-------------------ICONS--------------------*/
+ .icon-big{
+   font-size: 350%;
+   display: block;
+   color:#e67e22;
+   margin-bottom: 10px;
+ }
+
+ .icon-small{
+   font-size: 250%;
+   display: inline;
+   color:#e67e22;
+   margin-bottom: 10px;
+ }
+
+ /*-------------------------------*/
+ /*HEADER                         */
+ /*-------------------------------*/
+
+ header {
+     /*background: #4B79A1; /* fallback for old browsers */
+     /*background: -webkit-linear-gradient(to left, #4B79A1 , #283E51); /* Chrome 10-25, Safari 5.1-6 */
+     /*background: linear-gradient(to left, #4B79A1 , #283E51); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     background-color: #2c3e50;
+     background-size: cover;
+     background-position: center;
+     height: 100vh;
+ }
+
+ .main-text-box{
+     position: absolute;
+     width: 1140px;
+     top: 50%;
+     left: 50%;
+     transform: translate(-35%,-50%);
+ }
+
+
+ h1{
+     margin-top: 0;
+     margin-bottom: 40px;
+     color: white;
+     font-size: 400%;
+     font-weight: 400;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+     word-spacing: 4px;
+ }
+
+
+
+ .btn:link,
+ .btn:visited
+ {
+     display: inline-block;
+     padding: 20px 100px;
+     font-weight: 400;
+     text-decoration: none;
+     border-radius: 200px;
+     transition: background-color 0.2s, border 0.2s, color 0,2s;
+ }
+
+ .btn-1:link,
+ .btn-1:visited
+ {
+     background-color: #18b093;
+     border: 1px solid #18b093;
+     color: white;
+     margin-right: 80px;
+     margin-left: 80px;
+ }
+
+
+ .btn-2:link,
+ .btn-2:visited{
+     border: 1px solid #18b093;
+     color: white;
+ }
+
+ .btn:hover,
+ .btn:active{
+     background-color: #14927a;
+ }
+
+ .btn-1:hover,
+ .btn-1:active {
+     border: 1px solid #14927a;
+ }
+
+
+ .btn-2:hover,
+ .btn-2:active{
+     border: 1px solid #14927a;
+     color: white;
+ }
+
+ /* ----------------------------------------------- */
+/* FORM SECTION*/
+/* ----------------------------------------------- */
+
+
+input[type=text],
+input[type=email],
+input[type=password],
+textarea {
+    width: 89%;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+label{
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-top: 50px;
+}
+
+
+select {
+    width: 60%;
+    padding: 50px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+
+
+  .wrapper{
+    min-height: 180px;
+     max-height: 200px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 400px;
+ }
+ .wrapper .selection{
+   width:150px;
+  border: 1px solid #ccc;
+ }
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+
+.section-form {
+    padding: 0px 0;
+    height: 100vh;
+}
+
+.contact-form{
+    width: 60%;
+    margin: 0 250px;
+}
+
+.login{
+
+    padding: 100px 0;
+    height: 100vh;
+
+}
+
+.login-form{
+    width: 60%;
+    padding: 50px 50px;
+    margin: 0px 180px;
+}
+
+*:focus {outline: none;}
+
+/* ----------------------------------------------- */
+/* My Account Info Table */
+/* ----------------------------------------------- */
+
+
+.table-striped{
+    border: 2px solid #004E63;
+    position:relative;
+    margin: 0 auto;
+    width: 60%;
+
+}
+.table-header{
+    background-color:#004E63;
+    border:2px solid black;
+}
+.table-header td{
+    color:white;
+    padding-left:2px;
+    text-align: center;
+    font-family: Lato;
+}
+
+.table-header th{
+    color:white;
+    padding-left:2px;
+}
+
+.table-rows{
+    border:2px solid black;
+
+    }
+.table-rows td{
+      border:1px solid black;
+    text-align: center;
+    font-family: Lato;
+}

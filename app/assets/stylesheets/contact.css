@@ -1,0 +1,92 @@
+
+/*-------------------------------*/
+/*CSS                           */
+/*-------------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: white;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/*-------------------------------*/
+/*CONTACT                        */
+/*-------------------------------*/
+
+h2{
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 120px;
+}
+
+h2:after{
+display: block;
+height: 2px;
+background-color: #18b093;
+content: "";
+width: 100px;
+margin: 0 auto;
+margin-top: 30px;
+}
+
+.section-form {
+    padding: 0px 0;
+    height: 100vh;
+}
+
+.contact-form{
+    width: 60%;
+    margin: 0 250px;
+    height: 100vh;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+input[type=submit]{
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0,2s;
+    background-color: #18b093;
+    border: 1px solid #18b093;
+    color: white;
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #14927a;
+}
+
+*:focus {outline: none;}

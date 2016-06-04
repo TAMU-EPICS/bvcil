@@ -1,0 +1,53 @@
+<section class="contact-form">
+<div class="row">
+<h2>Add New Course</h2>
+</div>
+<div class="row">
+
+<%= form_for(@course, class:"contact-form") do |f| %>
+  <% if @course.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@course.errors.count, "error") %> prohibited this course from being saved:</h2>
+
+      <ul>
+      <% @course.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="row">
+      <div class="col span-1-of-3">
+        <%= f.label :name %><br />
+      </div>
+      <div class="col span-2-of-3">
+    <%= f.text_field :name, autofocus: true, class: "form-control" %>
+  </div>
+  </div>
+
+  <div class="row">
+      <div class="col span-1-of-3">
+        <%= f.label :location %><br />
+      </div>
+      <div class="col span-2-of-3">
+    <%= f.text_field :location, autofocus: true, class: "form-control" %>
+  </div>
+  </div>
+<br/>
+<br/>
+
+  <div class="course-button-row">
+    <div class="col span-1-of-3">
+        <label>&nbsp; <br/></label>
+    </div>
+      <div class="col span-2-of-3">
+      <%= f.submit "Add Course", class: "btn btn-1" %>
+
+          </div>
+
+        </div>
+
+<% end %>
+
+</div>

@@ -1,0 +1,76 @@
+<section class="contact-form">
+<div class="row">
+<h2>Sign up</h2>
+</div>
+<div class="row">
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name), class: "contact-form") do |f| %>
+  <%= devise_error_messages! %>
+
+  <div class="row">
+      <div class="col span-1-of-3">
+        <%= f.label :email %><br />
+      </div>
+      <div class="col span-2-of-3">
+    <%= f.email_field :email, autofocus: true, class: "form-control" %>
+  </div>
+  </div>
+
+  <div class="row">
+      <div class="col span-1-of-3">
+    <%= f.label :firstname %><br />
+  </div>
+  <div class="col span-2-of-3">
+    <%= f.text_field :firstname, class: "form-control" %>
+  </div>
+</div>
+
+<div class="row">
+    <div class="col span-1-of-3">
+    <%= f.label :lastname %><br />
+  </div>
+  <div class="col span-2-of-3">
+    <%= f.text_field :lastname, class: "form-control" %>
+  </div>
+</div>
+
+<div class="row">
+    <div class="col span-1-of-3">
+    <%= f.label :phone %><br />
+  </div>
+  <div class="col span-2-of-3">
+    <%= f.text_field :phone, class: "form-control" %>
+  </div>
+</div>
+
+<div class="row">
+    <div class="col span-1-of-3">
+    <%= f.label :password %>
+  </div>
+  <div class="col span-2-of-3">
+    <%= f.password_field :password, autocomplete: "off", class: "form-control" %>
+  </div>
+</div>
+
+<div class="row">
+    <div class="col span-1-of-3">
+    <%= f.label :confirm %>
+  </div>
+    <div class="col span-2-of-3">
+    <%= f.password_field :confirm, autocomplete: "off", class: "form-control" %>
+  </div>
+</div>
+
+<div class="button-row">
+  <div class="col span-1-of-3">
+      <label>&nbsp; <br/></label>
+  </div>
+    <div class="col span-2-of-3">
+    <%= f.submit "Sign up", class: "btn btn-1" %>
+
+        </div>
+
+      </div>
+    </div>
+<% end %>
+</div>
+</section>

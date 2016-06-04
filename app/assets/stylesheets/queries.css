@@ -1,0 +1,264 @@
+/* Big tablet to 1500px */
+@media only screen and (max-width: 1500px) {
+
+
+body {font-size: 20px;
+      width: 120%;
+    }
+header{
+  height: 1024px;
+}
+.notice{
+  margin-top: 1%;
+ text-align: center;
+
+  color: red;
+}
+.alert{
+margin-top: 1%;
+text-align: center;
+
+  color: red;
+}
+    .main-text-box {
+      padding-top: 4%;
+        padding-left: 8%;
+        width: 100%;
+    }
+
+    .course-button-row{
+      margin-right: 20%;
+    }
+
+    .login-form{
+      margin-top: 9%;
+    }
+
+    .newvisith2{
+      margin-top: 28%;
+    }
+
+    .thankyouheader{
+      margin-top: 27%;
+      padding-right: 12%;
+    }
+
+    .thankyouh3{
+      margin-top: 3%;
+      padding-right: 5%;
+      font-size: 153%;
+    }
+
+    .section-form{
+      margin-top: 200px;
+    }
+
+    .row {
+        padding: 0 2%;
+    }
+
+    .button-row{
+      padding-right: 6%;
+    }
+    .visitbutton-row{
+      padding-left: 6%;
+    }
+    .btn:link,
+    .btn:visited
+    {
+        display: inline-block;
+        padding: 20px 80px;
+        font-weight: 400;
+        text-decoration: none;
+        border-radius: 200px;
+        transition: background-color 0.2s, border 0.2s, color 0,2s;
+    }
+
+    .btn-1:link,
+    .btn-1:visited
+    {
+        background-color: #18b093;
+        border: 1px solid #18b093;
+        color: white;
+        margin-right: 80px;
+        margin-left: 80px;
+    }
+
+
+    .btn-2:link,
+    .btn-2:visited{
+        border: 1px solid #18b093;
+        color: white;
+    }
+
+    .btn:hover,
+    .btn:active{
+        background-color: #14927a;
+    }
+
+    .btn-1:hover,
+    .btn-1:active {
+        border: 1px solid #14927a;
+    }
+
+
+    .btn-2:hover,
+    .btn-2:active{
+        border: 1px solid #14927a;
+        color: white;
+    }
+
+}
+
+
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+
+
+
+
+}
+
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+  body {
+      font-size: 16px;
+  }
+
+  section {
+    padding: 30px 0;
+  }
+  .main-text-box{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+    h1, h3 {  font-size: 140%;}
+
+    h2 {font-size: 120%;}
+
+    .row,
+    .hero-text-box { padding: 0 4%; }
+    .col {
+        width: 100%;
+        margin: 0 0 4% 0;
+    }
+
+
+
+
+
+    input[type=text],
+    input[type=email],
+    input[type=password],
+    input[type=datetime-local],
+    textarea, select {
+        width: 140%;
+        font-size: 90%;
+        padding: 5px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+    }
+
+    .wrapper {
+        min-height: 180px;
+        max-height: 200px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        width: 140%;
+    }
+
+        .wrapper .selection {
+            width: 140%;
+            border: 1px solid #ccc;
+        }
+
+    #apptsTable {
+        display: none;
+    }
+
+    #acctsTable {
+        display: none;
+    }
+}
+
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+
+
+    #acctsTable {
+        display: none;
+    }
+
+    #apptsTable {
+        display: none;
+    }
+
+    h1, h3 {
+        font-size: 140%;
+    }
+
+    h2 {
+        margin-top: 55px;
+        font-size: 115%;
+    }
+
+    .hero-text-box h2 {
+        font-size: 140%;
+    }
+
+    .row, .hero-text-box {
+        padding: 0 20% 0 20%;
+    }
+
+    .col {
+        width: 100%;
+        margin: 1% 0 4% 0;
+    }
+
+    .long-copy {
+        margin-left: 0%;
+        font-size: 120%;
+    }
+
+    section {
+        padding: 25px 0;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .section-form {
+        width: 100%;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=password],
+    input[type=datetime-local],
+    textarea, select {
+        width: 120%;
+        font-size: 80%;
+        padding: 5px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+    }
+
+    .wrapper {
+        min-height: 180px;
+        max-height: 200px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        width: 120%;
+        font-size: 80%;
+    }
+
+        .wrapper .selection {
+            width: 100%;
+            border: 1px solid #ccc;
+            font-size: 80%;
+        }
+}

@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+<%= form_for(@survey) do |f| %>
+  <% if @survey.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@survey.errors.count, "error") %> prohibited this survey from being saved:</h2>
+
+      <ul>
+      <% @survey.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<!--
+<table>
+  <thead>
+    <tr>
+      <th>Question</th>
+      <th>Answer</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead> -->
+<!--
+  <tbody>
+    <% @surveys.each do |survey| %>
+      <tr>
+        <td><%= survey.question %></td>
+        <td><%= survey.answer %></td>
+        <td><%= link_to 'Show', survey %></td>
+        <td><%= link_to 'Edit', edit_survey_path(survey) %></td>
+        <td><%= link_to 'Destroy', survey, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody> -->
+<!-- </table> -->
+
+
+<h2>Rate your experience with us.</h2>
+<br/>
+<br/>
+<div class="row" style="padding-left:23em">
+    <div class="col span-1-of-2">
+    <%= f.select :answer, [ 'Excellent', 'Good', 'Average', 'Poor' ], :prompt => 'Select One' %>
+    </div>
+</div>
+
+<br>
+<div class="actions">
+  <%= f.submit "Submit", class: "btn btn-1"%>
+</div>
+<% end %>
