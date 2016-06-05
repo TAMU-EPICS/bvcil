@@ -1,19 +1,18 @@
-<p id="notice"><%= notice %></p>
+<p class="notice"><%= notice %></p>
 
-<h1>Listing Courses</h1>
+<h2>Listing Courses</h2>
 
-<table class="table table-bordered table-hover table-condensed">
-  <thead>
-    <tr>
+<table class="table-striped">
+
+    <tr class="table-header">
       <th>Name</th>
       <th>Location</th>
       <th colspan="3"></th>
     </tr>
-  </thead>
 
-  <tbody>
+
     <% @courses.each do |course| %>
-      <tr>
+      <tr class="table-rows">
         <td><%= course.name %></td>
         <td><%= course.location %></td>
         <td><%= link_to 'Show', course, class: "btn btn-link" %></td>
@@ -21,7 +20,7 @@
         <td><%= link_to 'Destroy', course, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-link" %></td>
       </tr>
     <% end %>
-  </tbody>
+
 </table>
 
 <br>

@@ -26,8 +26,8 @@ class CoursesController < ApplicationController
   def create
     @course = Course.new(course_params)
     @user = User.find_by_id(current_user.id)
-    @user.admin = true
-    @user.save
+    # @user.admin = true
+    # @user.save
     respond_to do |format|
       if @course.save
         format.html { redirect_to @course, notice: 'Course was successfully created.' }
